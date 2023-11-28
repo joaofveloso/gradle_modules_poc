@@ -1,0 +1,31 @@
+plugins {
+    id 'java'
+    id 'org.springframework.boot' version '3.2.0'
+    id 'io.spring.dependency-management' version '1.1.4'
+}
+
+group = 'org.example'
+version = '0.0.0'
+
+repositories {
+    mavenCentral()
+}
+
+java {
+    sourceCompatibility = '17'
+}
+
+dependencies {
+
+    implementation project(':domain')
+    implementation project(':controllers')
+    implementation project(':credit_card')
+    implementation project(':sqlAdapter')
+
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
+
+test {
+    useJUnitPlatform()
+}

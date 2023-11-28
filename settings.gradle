@@ -1,0 +1,13 @@
+rootProject.name = 'modules'
+
+include 'project1'
+include 'project2'
+include 'controllers'
+include 'consumers'
+include 'domain'
+include 'sqlAdapter'
+include 'documentAdapter'
+include 'infra'
+include 'rest'
+include 'credit_card'
+
